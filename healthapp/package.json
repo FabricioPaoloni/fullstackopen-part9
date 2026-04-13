@@ -1,0 +1,16 @@
+{
+  "name": "healthapp",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Fabricio Paoloni",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "calculateBmi": "tsc bmi/bmiCalculator.ts && node bmi/bmiCalculator.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "typescript": "^6.0.2"
+  }
+}

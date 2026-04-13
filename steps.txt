@@ -1,0 +1,2 @@
+Exercise 9.1: The bmi calculator -COMPLETED-
+Create a script for typechecking and running the program with the command npm run calculateBmi. -done
