@@ -1,2 +1,14 @@
 Exercise 9.1: The bmi calculator -COMPLETED-
 Create a script for typechecking and running the program with the command npm run calculateBmi. -done
+
+Exercise 9.2: Exercise calculator
+1. Create the code of this exercise in file exerciseCalculator.ts in the same project with the previous exercise. -done
+2.For the Result object, you should create an interface -done
+-COMPLETED-
+
+Exercise 9.3. Command line
+Change the previous exercises so that you can give the parameters of bmiCalculator and exerciseCalculator as command-line arguments.
+1- change bmiCalculator -done; had to change the script calculateBmi to make it work
+2- change exerciseCalculator.ts -done now accepts some variables from the terminal, up to 8, all of them must be numbers. If the user introduce more than 8 variables, an error will be printed.
+-COMPLETED-
+

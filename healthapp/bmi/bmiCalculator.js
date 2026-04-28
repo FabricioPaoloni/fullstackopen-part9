@@ -13,4 +13,6 @@ const calculateBmi = (altura, peso) => {
             return "Obese range";
     }
 };
-console.log(calculateBmi(180, 74));
+const altura = Number(process.argv[2]);
+const peso = Number(process.argv[3]);
+console.log(calculateBmi(altura, peso));

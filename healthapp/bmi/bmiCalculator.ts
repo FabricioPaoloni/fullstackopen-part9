@@ -1,3 +1,5 @@
+//this program accepts 2 parameters, the frist one is for the height, the second for the weight. Both must be numbers.
+
 const calculateBmi = (altura: number, peso: number) => {
   let bmi = peso / (altura / 100) ** 2;
   //   console.log(bmi);
@@ -13,4 +15,11 @@ const calculateBmi = (altura: number, peso: number) => {
   }
 };
 
-console.log(calculateBmi(180, 74));
+const altura: number = Number(process.argv[2]);
+const peso: number = Number(process.argv[3]);
+
+if (isNaN(altura) || isNaN(peso)) {
+  console.log("Wrong input, height and weight must be numbers");
+} else {
+  console.log(calculateBmi(altura, peso));
+}

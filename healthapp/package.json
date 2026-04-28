@@ -7,10 +7,12 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "calculateBmi": "tsc bmi/bmiCalculator.ts && node bmi/bmiCalculator.ts",
+    "calculateBmi": "cd bmi/ tsc bmiCalculator.ts && node bmiCalculator.ts",
+    "calculateExercise": "node exerciseCalculator.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
+    "@types/node": "^25.6.0",
     "typescript": "^6.0.2"
   }
 }
