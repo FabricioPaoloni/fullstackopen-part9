@@ -7,12 +7,19 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "calculateBmi": "cd bmi/ tsc bmiCalculator.ts && node bmiCalculator.ts",
-    "calculateExercise": "node exerciseCalculator.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "calculateBmi": "cd bmi/ tsc && node bmiCalculator.ts",
+    "calculateExercise": "tsc && node exerciseCalculator.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.ts",
+    "dev": "concurrently \"tsc --watch\" \"node --watch index.ts\" "
   },
   "devDependencies": {
+    "@types/express": "^5.0.6",
     "@types/node": "^25.6.0",
+    "concurrently": "^9.2.1",
     "typescript": "^6.0.2"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
   }
 }

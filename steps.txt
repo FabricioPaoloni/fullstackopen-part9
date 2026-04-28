@@ -12,3 +12,14 @@ Change the previous exercises so that you can give the parameters of bmiCalculat
 2- change exerciseCalculator.ts -done now accepts some variables from the terminal, up to 8, all of them must be numbers. If the user introduce more than 8 variables, an error will be printed.
 -COMPLETED-
 
+Exercise 9.4: Express
+We will continue to build the app of the previous exercises.
+Add now Express to the app dependencies and create an HTTP GET endpoint hello that answers 'Hello Full Stack!'
+The web app should be started with the commands npm start in production mode and npm run dev in development mode.
+Replace also your existing tsconfig.json file with the following content: (web image)
+1. install Express -done
+2. install express types -done
+3. create index.js -> import express and build an express app with a GET http route
+4. create the scripts "start" and "dev" (install concurrently library)
+5. expand tsconfig.json  -done
+-COMPLETED-

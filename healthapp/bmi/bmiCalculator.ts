@@ -12,6 +12,8 @@ const calculateBmi = (altura: number, peso: number) => {
       return "Overweight range";
     case bmi >= 29.9:
       return "Obese range";
+    default:
+      return "Error, try again";
   }
 };
 
