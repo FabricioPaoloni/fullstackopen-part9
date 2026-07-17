@@ -1,6 +1,6 @@
 //this program accepts 2 parameters, the frist one is for the height, the second for the weight. Both must be numbers.
 
-const calculateBmi = (altura: number, peso: number) => {
+export const calculateBmi = (altura: number, peso: number) => {
   let bmi = peso / (altura / 100) ** 2;
   //   console.log(bmi);
   switch (true) {
@@ -17,11 +17,13 @@ const calculateBmi = (altura: number, peso: number) => {
   }
 };
 
-const altura: number = Number(process.argv[2]);
-const peso: number = Number(process.argv[3]);
+if (process.argv[1] === import.meta.filename) {
+  const altura: number = Number(process.argv[2]);
+  const peso: number = Number(process.argv[3]);
 
-if (isNaN(altura) || isNaN(peso)) {
-  console.log("Wrong input, height and weight must be numbers");
-} else {
-  console.log(calculateBmi(altura, peso));
+  if (isNaN(altura) || isNaN(peso)) {
+    console.log("Wrong input, height and weight must be numbers");
+  } else {
+    console.log(calculateBmi(altura, peso));
+  }
 }

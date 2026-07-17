@@ -19,7 +19,15 @@ The web app should be started with the commands npm start in production mode and
 Replace also your existing tsconfig.json file with the following content: (web image)
 1. install Express -done
 2. install express types -done
-3. create index.js -> import express and build an express app with a GET http route
+3. create index.ts -> import express and build an express app with a GET http route
 4. create the scripts "start" and "dev" (install concurrently library)
 5. expand tsconfig.json  -done
+-COMPLETED-
+
+Exercise 9.5: WebBmi
+1. req.query - configure in index.ts -done
+2. check for height and weight number types (type validation) -done
+3- export calculateBmi function -done
+4- create GET method for webBmi -done
+5- Consider adding the condition process.argv[1] === import.meta.filename to the file bmiCalculator.ts -done
 -COMPLETED-
