@@ -9,7 +9,7 @@ app.get("/hello", (_req, res) => {
 
 //GET for BMI
 app.get("/bmi", (req, res) => {
-  let { height, weight } = req.query;
+  const { height, weight } = req.query;
 
   //check for height and weight number types (type validation)
   if (!height || typeof height !== "string") {
@@ -28,7 +28,7 @@ app.get("/bmi", (req, res) => {
   }
   //validation ends
 
-  let bmiResult = calculateBmi(parseInt(height), parseInt(weight));
+  const bmiResult = calculateBmi(parseInt(height), parseInt(weight));
 
   console.log(height, weight, bmiResult);
   res.json({ weight, height, bmi: bmiResult });

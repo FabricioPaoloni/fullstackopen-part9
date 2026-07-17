@@ -1,7 +1,7 @@
 //this program accepts 2 parameters, the frist one is for the height, the second for the weight. Both must be numbers.
 
 export const calculateBmi = (altura: number, peso: number) => {
-  let bmi = peso / (altura / 100) ** 2;
+  const bmi = peso / (altura / 100) ** 2;
   //   console.log(bmi);
   switch (true) {
     case bmi < 18.5:
