@@ -10,12 +10,12 @@ interface returnObjectFormat {
   average: number;
 }
 
-const calculateExercises = (
+export const calculateExercises = (
   userDataArray: number[],
   target: number,
 ): returnObjectFormat => {
   //   let returnObject = {};
-
+  console.log(userDataArray);
   const periodLength = userDataArray.length;
   const trainingDays = userDataArray.filter((value) => value > 0).length;
   const average =
@@ -72,7 +72,7 @@ if (day8 !== null) {
     //we change this value to print an error if the user introduced wrong values
   }
   userArray.map((day) => {
-    if (isNaN(Number(day))) {
+    if (isNaN(Number(day)) || Number(day) > 7) {
       inputError = true;
     }
   });
