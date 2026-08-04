@@ -48,34 +48,29 @@ app.get("/bmi", (req, res) => {
 
 app.post("/exercises", (req, res) => {
   // console.log(req.body);
-  const { daily_exercises, target } = req.body;
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access
+  const daily_exercises: number[] = req.body.daily_exercises;
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access
+  const target: number = req.body.target;
   if (!target || !daily_exercises) {
     res.status(400).json({ error: "parameters missing" });
   }
 
   // console.log(daily_exercises);
-  // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
   const day1: number | null =
     daily_exercises[0] !== undefined ? Number(daily_exercises[0]) : null;
-  // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
   const day2: number | null =
     daily_exercises[1] !== undefined ? Number(daily_exercises[1]) : null;
-  // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
   const day3: number | null =
     daily_exercises[2] !== undefined ? Number(daily_exercises[2]) : null;
-  // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
   const day4: number | null =
     daily_exercises[3] !== undefined ? Number(daily_exercises[3]) : null;
-  // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
   const day5: number | null =
     daily_exercises[4] !== undefined ? Number(daily_exercises[4]) : null;
-  // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
   const day6: number | null =
     daily_exercises[5] !== undefined ? Number(daily_exercises[5]) : null;
-  // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
   const day7: number | null =
     daily_exercises[6] !== undefined ? Number(daily_exercises[6]) : null;
-  // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
   const day8: number | null =
     daily_exercises[7] !== undefined ? Number(daily_exercises[7]) : null;
 
