@@ -54,28 +54,46 @@ app.post("/exercises", (req, res) => {
   }
 
   // console.log(daily_exercises);
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
   const day1: number | null =
     daily_exercises[0] !== undefined ? Number(daily_exercises[0]) : null;
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
   const day2: number | null =
     daily_exercises[1] !== undefined ? Number(daily_exercises[1]) : null;
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
   const day3: number | null =
     daily_exercises[2] !== undefined ? Number(daily_exercises[2]) : null;
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
   const day4: number | null =
     daily_exercises[3] !== undefined ? Number(daily_exercises[3]) : null;
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
   const day5: number | null =
     daily_exercises[4] !== undefined ? Number(daily_exercises[4]) : null;
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
   const day6: number | null =
     daily_exercises[5] !== undefined ? Number(daily_exercises[5]) : null;
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
   const day7: number | null =
     daily_exercises[6] !== undefined ? Number(daily_exercises[6]) : null;
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
   const day8: number | null =
     daily_exercises[7] !== undefined ? Number(daily_exercises[7]) : null;
 
   if (day8 !== null) {
     res.status(400).json({ error: "Too many days for a week :/ Maximun is 7" });
   } else {
-    let inputError = false;
-    const userArray = [day1, day2, day3, day4, day5, day6, day7, day8];
+    let inputError: boolean = false;
+
+    const userArray: (number | null)[] = [
+      day1,
+      day2,
+      day3,
+      day4,
+      day5,
+      day6,
+      day7,
+      day8,
+    ];
     //we check for target input first
     if (isNaN(target)) {
       res.status(400).json({ error: "malformatted parameters" });
@@ -98,7 +116,9 @@ app.post("/exercises", (req, res) => {
       res.status(400).json({ error: "malformatted parameters" });
     } else {
       // console.log(userArray);
-      const userArrayFiltered = userArray.filter((day) => day !== null);
+      const userArrayFiltered: number[] = userArray.filter(
+        (day) => day !== null,
+      );
       if (userArrayFiltered.length === 0) {
         res.status(400).json({ error: "parameters missing" });
       } else {
