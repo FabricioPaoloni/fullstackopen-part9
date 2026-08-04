@@ -31,3 +31,21 @@ Exercise 9.5: WebBmi
 4- create GET method for webBmi -done
 5- Consider adding the condition process.argv[1] === import.meta.filename to the file bmiCalculator.ts -done
 -COMPLETED-
+
+Exercise 9.6: Eslint
+Configure your project to use the above ESLint settings and fix all the warnings.
+1. install as dev: eslint, @eslint/js and typescript-eslint with de commando - npm install --save-dev eslint @eslint/js typescript-eslint -done
+2. Write the rules to eslint.config.mjs -done
+3. set up a lint npm script -done
+4. install and configure @stylistic/eslint-plugin -done
+5. solve all the errorss
+-COMPLETED-
+
+Exercise 9.7. WebExercises
+Add an endpoint to your app for the exercise calculator. It should be used by doing a HTTP POST request to the endpoint http://localhost:3000/exercises
+1.  import exerciseCalculator and create the post route -done
+-COMPLETED- 
+
+Exercise 9.8: Checkup:
+1. changed some file so tests passes (error description, error status)
+-COMPLETED-
