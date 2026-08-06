@@ -49,3 +49,14 @@ Add an endpoint to your app for the exercise calculator. It should be used by do
 Exercise 9.8: Checkup:
 1. changed some file so tests passes (error description, error status)
 -COMPLETED-
+
+Exercise 9.9. Patientor backend, step1
+1. init npm project -done
+2. config package.json (type:"module") -done
+3. install typescript and configure tsconfig.json -done
+4. install express, @types/express, ESlint  -done (OJO con typescript-eslint no me dejó instalar por fallo de compatibilidad)
+5. config lint rules -done
+6. install concurrently -done
+7. config package.json scripts -done
+8. create the initial server and a HTTP GET method for /api/ping -done
+-COMPLETED-
