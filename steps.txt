@@ -60,3 +60,13 @@ Exercise 9.9. Patientor backend, step1
 7. config package.json scripts -done
 8. create the initial server and a HTTP GET method for /api/ping -done
 -COMPLETED-
+
+Exercise 9.10: Patientor backend, step2
+/patientor/frontend:
+1. install dependencies with npm install -done
+2. change backend port to 3000 as ours -done
+3. install CORS in our backend with npm install cors -done
+4. implement cors in the backend with import and app.use(cors())
+5. install @types/cors to correct the error showed by VSCode - npm i --save-dev @types/cors -done
+app working fine
+-COMPLETED-
