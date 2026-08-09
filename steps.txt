@@ -70,3 +70,18 @@ Exercise 9.10: Patientor backend, step2
 5. install @types/cors to correct the error showed by VSCode - npm i --save-dev @types/cors -done
 app working fine
 -COMPLETED-
+
+Exercise 9.11: Patientor backend, step3
+1. get the files diagnoses.ts and patients.ts from the link, store it in /data -done
+2. create a type Diagnosis and use it to create an endpoint /api/diagnosis for fetching all diagnoses with HTTP GET
+Note that diagnoses may or may not contain the field latin. You might want to use optional properties (opens in a new tab) in the type definition.
+Hint: Enabling the ESLint rule consistent-type-imports could save you from many headaches.
+    2.a. create Diagnosis type in /src/types.ts -done
+    2.b. create /routes/diagnosesRouter.ts -done
+    2.c. use the created route in index.ts for the endpoint /api/diagnoses -done
+    2.d. create src/services directory and place diagnosesService.ts with the functions to fetching and saving diagnoses -done
+    2.e. implement the new service in the router -done
+    2.f. change diagnoses.ts so it exports typed data -done
+    2.g. add ESLint rule consistent-type-imports -done
+-COMPLETED-
+
