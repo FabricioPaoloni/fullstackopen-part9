@@ -85,3 +85,17 @@ Hint: Enabling the ESLint rule consistent-type-imports could save you from many 
     2.g. add ESLint rule consistent-type-imports -done
 -COMPLETED-
 
+Ejercicio 9.12: Patientor backend, step4
+Create data type Patient and set up the GET endpoint /api/patients which returns all the patients to the frontend, excluding field ssn. Use a utility type (opens in a new tab) to make sure you are selecting and returning only the wanted fields.
+In this exercise, you may assume that field gender has type string.
+1. create the new types in types.ts: Patient and NonSensitivePatient -done
+2. edit patients.ts so it exports typed data -done
+3. create patientService.ts and services -done
+4. create patientsRoutes.ts -done
+5. import and use patientsRoutes in index.ts -done
+6. manual test http://localhost:3000/api/patients -> working fine, ssn is not shown. -done
+7. manual test http://localhost:5173/ -> working fine, Patient list showing the patients -done
+-COMPLETED-
+
+
+
