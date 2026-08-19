@@ -97,5 +97,37 @@ In this exercise, you may assume that field gender has type string.
 7. manual test http://localhost:5173/ -> working fine, Patient list showing the patients -done
 -COMPLETED-
 
+Exercise 9.13: Patientor backend, step5
+Create a POST endpoint /api/patients for adding patients. Ensure that you can add patients also from the frontend. You can create unique ids of type string using the uuid (opens in a new tab) library.
+1. install uuid -done
+2. create newPatientEntry type for typing new patients info -done
+2. extends addPatient function in patientsService.ts -done
+3. create the post method -done
+tested with frontend. Working fine. No validations implemented yet, no gender type created :/.
+-COMPLETED-
 
+Exercise 9.14: Patientor backend, step6
+Instructions
+Set up safe parsing, validation and type predicate to the POST /api/patients request.
+Refactor the gender field to use a const object based type.
+1. create the gender field missing last exercise, created as a const object in types.ts -done
+2. create the gender type based on the const -done
+3. create parser function for each field in utils.ts -done
+4. create validation for each field -done
+5. validate the request object as object and the inclusion of the needed key values -done
+6. implement the new parser function parseNewPatientEntry in patientsRoutes's post method -done
+tested from the frontend, working as expected
+-COMPLETED-
+
+Exercise 9.15: Patientor backend, step 7
+Use Zod to validate the requests to the POST endpoint /api/patients.
+1. install Zod -done
+2. import Zod -done
+3. create new zod schema -done
+4. base the parsing on the new zod schema -done
+5. add error handling in the router -done
+-COMPLETED- tested with frontend, working fine.
+
+Exercise 9.16: Checkup
+Todos los tests pasaron localmente, falta habilitar lo de github y testear en github actions
 
